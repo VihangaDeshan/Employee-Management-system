@@ -18,7 +18,7 @@ namespace Project01
 {
     public partial class Fogot_Password : KryptonForm
     {
-        private readonly string connectionString = "endpoint=https://isuru101.unitedstates.communication.azure.com/;accesskey=OhqWN9YnNg+dKgm/MOvJGiBLH6YOQJV7cb4/iuZoAXflsuhUwS9lRUpMSdimvdf5j+2ZS1iik+VnpLvrsmvmEQ==";
+        private readonly string connectionString = "enter your connectionString";
         private readonly string senderEmail = "DoNotReply@b7d0fced-04e7-4e65-b231-1b9796643b5b.azurecomm.net";
 
         private readonly EmailClient emailClient;
@@ -28,7 +28,7 @@ namespace Project01
         {
             InitializeComponent();
 
-            var key = new AzureKeyCredential("OhqWN9YnNg+dKgm/MOvJGiBLH6YOQJV7cb4/iuZoAXflsuhUwS9lRUpMSdimvdf5j+2ZS1iik+VnpLvrsmvmEQ==");
+            var key = new AzureKeyCredential("enter your key here");
             var endpoint = new Uri("https://isuru101.unitedstates.communication.azure.com/");
             emailClient = new EmailClient(endpoint, key);
         }
